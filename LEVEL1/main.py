@@ -1,7 +1,10 @@
-def parse(file):
-    with open(file, "r") as f:
-        data1 = [line.strip().split() for line in f if line.strip()]
-        data2 = data1[1:]
+from igel import *
+from Parser import *
 
-    #print(data2)
-    return data2
+file_name = "Files/level1_0_example.in"
+
+data2 = parse(file_name)
+print(data2)
+
+for values in data2:
+    print_asteroids(int(values[0]), int(values[1]))
