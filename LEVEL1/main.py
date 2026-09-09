@@ -1,18 +1,9 @@
-def print_asteroids(width, height):
-    print('#'*(width+2))
-    
-    for i in range(height):
-        print('#' + ':'*(width) + '#')
-    print('#'*(width+2))
-    print()
-#print_asteroids(10, 4)
+from igel import *
+from Parser import *
 
+file_name = "Files/level1_0_example.in"
 
-
-with open("Files/level1_1_small.in", "r") as f:
-    data1 = [line.strip().split() for line in f if line.strip()]
-    data2 = data1[1:]
-
+data2 = parse(file_name)
 print(data2)
 
 for values in data2:
