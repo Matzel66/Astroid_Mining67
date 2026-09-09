@@ -1,7 +1,9 @@
 def print_asteroids(width, height):
-    print('#'*width)
+    lines = []
+    lines.appned('#'*(width+2))
     
     for i in range(height):
-        print('#' + ':'*(width-2) + '#')
-        
+        lines.append('#' + ':'*(width) + '#')
+    lines.append('#'*(width+2))
+
 print_asteroids(10, 4)
