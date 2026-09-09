@@ -5,8 +5,10 @@ def print_asteroids(width, height):
         print('#' + ':'*(width) + '#')
     print('#'*(width+2))
     print()
+
 #print_asteroids(10, 4)
 
+l = []
 
 
 with open("Files/level1_1_small.in", "r") as f:
@@ -17,3 +19,6 @@ print(data2)
 
 for values in data2:
     print_asteroids(int(values[0]), int(values[1]))
+
+
+print(l)
